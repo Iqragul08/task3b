@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 100%;
+            height: auto;
+            background-color: rgb(13, 59, 44);
+
+        }
+
+        .logo {
+            margin-left: 10px;
+        }
+
+        .box1 {
+            display: flex;
+            max-width: 1300px;
+            margin-left: 10px;
+            width: 100%;
+            background: #8b2d2d;
+        }
+
+        /* Left Section */
+        .leftbox {
+            flex: 1;
+            padding: 100px;
+            justify-content: center;
+            margin-top: 90px;
+
+        }
+
+        .leftbox h1 {
+            font-size: 60px;
+            color: rgb(245, 240, 240);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .leftbox p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            max-width: 450px;
+        }
+
+        .leftbox p strong {
+            font-size: 20px;
+        }
+/* right Section */
+        .rightbox {
+            justify-items: center;
+            width: 50%;
+
+        }
+
+        form {
+            margin-top: 50px;
+            display: grid;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid #fff;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #ddd;
+        }
+
+        label {
+            font-weight: bolder;
+            margin-bottom: 8px;
+            font-size: 25px;
+            display: block;
+        }
+
+         .award-option {
+      margin-top: 10px;
+      color: white;
+    }
+
+    .award-option input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+        .rightbox p {
+            color: white;
+            font-size: small;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .sub-btn {
+            background: #fff;
+            color: #8d8787;
+            width: 80%;
+            font-size: 18px;
+            padding: 14px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 80px;
+
+        }
+
+        .sub-btn:hover {
+            background: rgb(116, 105, 105);
+        }
+      
+    </style>
+</head>
+
+<body>
+    <section class="Box">
+        <div class="logo">
+            <img src="logo.png" width="90px" alt="logo">
+        </div>
+        <div class="box1">
+            <div class="leftbox">
+                <h1>Submission</h1>
+                <p>
+                    All details of submissions will be kept strictly private and <br> confidential by Mailman and will
+                    not be
+                    used for any purpose <br> other than judging Red Card 2018 winners.
+                </p>
+                <p><strong>Applications will close on the <br> 15th December 2017</strong></p>
+            </div>
+
+            <div class="rightbox">
+                <form action="Enrollment">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Organisation" required>
+
+                    <label>Which Award</label>
+                    <p>(please tick and provide detail for all of the awards you would like to be nominated for)</p>
+                    <div class="award-option">
+                        <input type="checkbox"> Best Livestream
+                        <textarea placeholder="Description & Results (max. 150 words)"></textarea>
+                    </div>
+                    <div class="award-option">
+                        <input type="checkbox"> Best Tour Campaign
+                        <textarea placeholder="Description & Results (max. 150 words)"></textarea>
+                    </div>
+                    <div class="award-option">
+                        <input type="checkbox"> Best Sponsor Activation
+                        <textarea placeholder="Description & Results (max. 150 words)"></textarea>
+                    </div>
+
+                    <div class="award-option">
+                        <input type="checkbox"> Best Use of Technology
+                        <textarea placeholder="Description & Results (max. 150 words)"></textarea>
+                    </div>
+
+                    <div class="award-option">
+                        <input type="checkbox"> Best Online Campaign
+                        <textarea placeholder="Description & Results (max. 150 words)"></textarea>
+                    </div>
+                    <button type="submit" class="sub-btn">✔ Submission Successful</button>
+                </form>
+
+            </div>
+
+
+
+        </div>
+
+
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
